@@ -1,4 +1,4 @@
-# Invoice-App
+# Sales-App
 A project covering various concepts in Java.
 
 ## Inheritance and Arrays
