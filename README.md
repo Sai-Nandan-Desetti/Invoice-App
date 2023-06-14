@@ -68,3 +68,28 @@ Eg: A JSPS book may contain the following tags:
 
   * `SalesReportApp`:
     *  Takes in a list of invoices from the user and prepares a sales report for the day.
+
+
+## I/O Streams
+
+### Objectives:
+* Create a text file of your own which would contain all the product codes and quantity (optional). This file may contain each entry in separate line. Two options of approach:
+  * Read both code and quantity from the file and create `ProductOrders` accordingly.
+  * Read/have only product code in file and use `Random` class to generate quantity value by giving a reasonable limit.
+* Create a `ReadMyFile.java` that contains all related functions to support your program.
+* `InvoiceApp1File.java` should use the `ReadMyFile.java` to read the file.
+* After every read, create the `ProductOrders` and store them in a collection object and create `Invoice` object and display them.
+* Create `StoreMyObject.java` class to save the afore-mentioned `Invoice` object into `MyProdctOrders` file.  
+  * To save the object, you may have to serialize the necessary objects. Use the `Object` stream to store and retrieve the object.
+  * After storing the object, try reading the object from `MyProductOrders` file and deserialize the object and print the `Invoice`.
+
+
+## Networking
+
+### Objectives:
+* The `Invoice` object that was serialized should be transferred to a server via `DataGramSocket` and `DatagramPacket`.
+* The `DatagramPacket` should contain your name and the serialized object. Two approaches available for this:
+  * Modify the serialized file to add your name in the first line of the file.
+  * Concat your name byte array and object byte array together.
+* Your DatagramPacket should be addressed to a given IP address and port number.
+* You should be able to send the above data and should be able to receive the acknowledgement/response with 50bytes `DatagramPacket`.
