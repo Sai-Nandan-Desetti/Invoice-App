@@ -91,5 +91,5 @@ Eg: A JSPS book may contain the following tags:
 * The `DatagramPacket` should contain your name and the serialized object. Two approaches available for this:
   * Modify the serialized file to add your name in the first line of the file.
   * Concat your name byte array and object byte array together.
-* Your DatagramPacket should be addressed to a given IP address and port number.
+* Your `DatagramPacket` should be addressed to a given IP address and port number.
 * You should be able to send the above data and should be able to receive the acknowledgement/response with 50bytes `DatagramPacket`.
