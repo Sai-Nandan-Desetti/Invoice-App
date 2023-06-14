@@ -87,7 +87,7 @@ Eg: A JSPS book may contain the following tags:
 ## Networking
 
 ### Objectives:
-* The `Invoice` object that was serialized should be transferred to a server via `DataGramSocket` and `DatagramPacket`.
+* The `Invoice` object that was serialized should be transferred to a server via `DatagramSocket` and `DatagramPacket`.
 * The `DatagramPacket` should contain your name and the serialized object. Two approaches available for this:
   * Modify the serialized file to add your name in the first line of the file.
   * Concat your name byte array and object byte array together.
