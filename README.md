@@ -6,7 +6,7 @@ A project covering various concepts in Java.
 ### Objective:
 * Given classes:
   * `Product.java`
-  * `ProductDB.java`
+  * `ProductDB.java` - a database of products
 
 * Code two sub-classes of `Product` class, namely:
   * `Book.java`
