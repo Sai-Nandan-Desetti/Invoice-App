@@ -13,7 +13,7 @@ public class InvoiceApp1File{
 
               LinkedList<ProductOrder> productOrders = new LinkedList<ProductOrder>();              
        
-              File product_database = new File("product_database");
+              File product_database = new File("product_orders");
 
 //Read the file and create invoice.
               try{       
